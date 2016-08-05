@@ -8,7 +8,7 @@ public class LinkedList
 		// When there is data in LinkedList
 		if(head != null)
 		{
-			tail.next = lElement;
+			tail.setNext(lElement);
 			tail = lElement;
 		}
 		// When the linked list is empty
@@ -19,15 +19,15 @@ public class LinkedList
 			}
 	}
 	
-	public void display(LinkedList lList)
+	public void display()
 	{
 		ListElement temp;
-		temp = lList.head;
-		if(lList.head != null)
+		temp = head;
+		if(head != null)
 			while(temp != null)
 				{
-					System.out.print(temp.val +",");
-					temp = temp.next;
+					System.out.print(temp.getVal() +",");
+					temp = temp.getNext();
 				}
 	}
 	public static void main(String[] args)
@@ -36,8 +36,9 @@ public class LinkedList
 		linkedList.insertLink(new ListElement(10));
 		linkedList.insertLink(new ListElement(13));
 		linkedList.insertLink(new ListElement(15));
+		linkedList.insertLink(new ListElement(19));
 		
-		linkedList.display(linkedList);
+		linkedList.display();
 		//System.out.println("done");
 		
 		
