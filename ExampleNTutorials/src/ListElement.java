@@ -9,7 +9,7 @@ public class ListElement<T>
 		data = value;
 	}
 	
-	public 
+	
 	
 	public static void main(String[] args)
 	{
