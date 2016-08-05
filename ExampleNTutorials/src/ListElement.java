@@ -16,6 +16,7 @@ public class ListElement<T>
 		// TODO Auto-generated method stub
 		//s
 		int x =0;
+		int y=0;
 	}
 
 }
