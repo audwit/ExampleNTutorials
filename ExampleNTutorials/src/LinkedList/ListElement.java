@@ -24,7 +24,7 @@ public class ListElement
 	}
 	public void setNext(ListElement next)
 	{
-		this.next = next;
+		this.next = next; 
 	}
 
 	

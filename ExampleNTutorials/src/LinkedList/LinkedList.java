@@ -2,7 +2,7 @@ package LinkedList;
 
 public class LinkedList
 {
-	ListElement head,tail;
+	private ListElement head,tail;
 	public void insertLink(ListElement lElement)
 	{
 		// When there is data in LinkedList
@@ -26,7 +26,7 @@ public class LinkedList
 		if(head != null)
 			while(temp != null)
 				{
-					System.out.print(temp.getVal() +",");
+					System.out.print(temp.getVal()+ ",");
 					temp = temp.getNext();
 				}
 	}
